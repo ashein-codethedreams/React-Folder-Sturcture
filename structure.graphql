@@ -1,0 +1,34 @@
+my-react-app/
+├── public/                       # Public directory for static assets
+│   ├── index.html                # Main HTML file for React app injection
+│   └── assets/                   # Folder for images, fonts, and other static resources
+│
+├── src/                          # Main source directory
+│   ├── api/                      # RTK Query API setup
+│   │   ├── apiSlice.js           # Base RTK Query configuration
+│   │   └── authApiSlice.js       # Authentication endpoints (login, register, etc.)
+│   │
+│   ├── app/                      # Application-wide state management
+│   │   ├── store.js              # Redux store configuration with RTK Query middleware
+│   │
+│   ├── components/               # Reusable UI components across features
+│   │   ├── Button.js             # Custom button component
+│   │   ├── Input.js              # Custom input field component
+│   │
+│   ├── features/                 # Directory for app features, organized by functionality
+│   │   └── auth/                 # Auth-related logic and components
+│   │       ├── AuthSlice.js      # Redux slice to manage authentication state
+│   │       ├── LoginForm.js      # Component handling login form logic
+│   │       └── ProtectedRoute.js # Logic for protecting routes from unauthenticated users
+│   │
+│   ├── hooks/                    # Custom hooks for application-wide use
+│   │   ├── useAuth.js            # Hook for checking user authentication status
+│   │
+│   ├── pages/                    # Full-page components
+│   │   ├── HomePage.js           # Home page component
+│   │   └── LoginPage.js          # Login page component
+│   │
+│   ├── App.js                    # Main app component, manages routing and layout
+│   └── index.js                  # Entry point for React, rendering App to the DOM
+│
+└── package.json                  # Project configuration file with dependencies
